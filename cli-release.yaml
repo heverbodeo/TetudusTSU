@@ -30,7 +30,6 @@ jobs:
       - name: Build CLI
         run: scripts/cli/build_cli_release.sh
       - name: Upload Binary
-        uses: actions/upload-artifact@v3
         with:
           name: cli-builds
           path: aptos-cli-*.zip
